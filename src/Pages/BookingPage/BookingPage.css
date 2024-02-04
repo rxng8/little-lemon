@@ -1,0 +1,50 @@
+/* Wrapper for the whole page, putting the 12-grid system */
+#BookingPage {
+  /* background-color: rgb(73, 94, 87); */
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#BookingPage form {
+  grid-column: 3/ span 9;
+  display: grid;
+  /* max-width: 200px; */
+  gap: 20px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#BookingPage img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#BookingPage h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+}
+
+#BookingPage h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(44, 71, 68);
+}
+
+#BookingPage p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+}
+
+#SubmittedBooking {
+  /* background-color: rgb(73, 94, 87); */
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#SubmittedBooking p {
+  grid-column: 3/ span 9;
+}

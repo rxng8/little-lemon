@@ -1,0 +1,56 @@
+/* Wrapper for the whole page, putting the 12-grid system */
+#Header {
+  /* background-color: rgb(73, 94, 87); */
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 0;
+  padding: 0;
+}
+
+/* This area is the area using the actual grid in the grid system */
+#Header .ActiveArea {
+  /* background-color: '#495E57'; */
+  grid-column: 3/ span 8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+#Header img {
+  /* background-color: aqua; */
+}
+
+/* Container for nav item */
+#Header nav {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Link setup */
+#Header .NavItem {
+  /* Layout stuff */
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  padding: 0;
+  display: inline;
+  font-size: 0.78rem;
+  /* Color and styling */
+  font-weight: 500;
+  color: #15191b;
+}
+
+#Header .NavItem:link {
+  text-decoration: none;
+}
+
+#Header .NavItem:hover {
+  text-decoration: none;
+  color: #d7cca4;
+}

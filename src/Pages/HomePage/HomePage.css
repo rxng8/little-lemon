@@ -1,0 +1,86 @@
+/* Wrapper for the whole page, putting the 12-grid system */
+#Main {
+  /* background-color: rgb(73, 94, 87); */
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* This area is the area using the actual grid in the grid system */
+#Main .Hero {
+  /* background-color: '#495E57'; */
+  grid-column: 3/ span 8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#Main .HeroLeft {
+  grid-column: 1 / 2;
+  padding-right: 1rem;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: left;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#Main .HeroRight {
+  grid-column: 2 / 3;
+  /* background-color: azure; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+#Main img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+#Main h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgb(33, 33, 33);
+}
+
+#Main h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(44, 71, 68);
+}
+
+#Main p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+}
+
+#Main .Link {
+  border-radius: 8px;
+  text-align: center;
+  height: 2em;
+  width: 6em;
+  margin-top: 1rem;
+}
+
+#Main button {
+  border-radius: 8px;
+  background-color: rgb(44, 71, 68);
+}
+
+#Main button:hover {
+  border-radius: 10px;
+  background-color: rgb(158, 192, 188);
+  text-align: center;
+}
+
+#Main button {
+  font-size: 0.6rem;
+  color: rgb(241, 238, 208);
+  text-decoration: none;
+}
